@@ -1,40 +1,45 @@
 
 h
-java:S1192"FDefine a constant instead of duplicating this literal "21424" 3 times.(®½ÕÇûÿÿÿÿ8ÆÖ…ÛÓ1
+java:S1192"FDefine a constant instead of duplicating this literal "21424" 6 times.(ˆ°Èüÿÿÿÿ8ÓùäÛÓ1
+e
+java:S1192"HDefine a constant instead of duplicating this literal "jaen.kr" 5 times.(ƒ“¹«8ÓùäÛÓ1
+f
+java:S1192"IDefine a constant instead of duplicating this literal "Java Pro" 4 times.(ƒ“¹«8ÓùäÛÓ1
 t
-java:S1192K"WDefine a constant instead of duplicating this literal "] --------------------" 3 times.(øı‰£8ğ«ÄÚÓ1
+java:S1192J"WDefine a constant instead of duplicating this literal "] --------------------" 5 times.(øı‰£8ÓùäÛÓ1
 7
-java:S1220""Move this file to a named package.8ğ«ÄÚÓ1
-N
-java:S1172",Remove this unused method parameter "books".(ÆÛ„êıÿÿÿÿ8ğ«ÄÚÓ1
-X	java:S125"<This block of commented-out lines of code should be removed.(’ü¸¾8Û„‘ÛÓ1
-]	java:S125,"<This block of commented-out lines of code should be removed.(ÿ€­¯şÿÿÿÿ8¾íÛÓ1
-G	java:S1063"+Replace this use of System.out by a logger.(³ë…¨8ı«ÄÚÓ1
-L	java:S1066"+Replace this use of System.out by a logger.(©şêÜúÿÿÿÿ8ı«ÄÚÓ1
-a
-java:S2147@"DCombine this catch with the one at line 62, which has the same body.(ï­£Ä8€¬ÄÚÓ1
-L	java:S106="+Replace this use of System.out by a logger.(¢ìÎçûÿÿÿÿ8€¬ÄÚÓ1
-L	java:S106?"+Replace this use of System.out by a logger.(©şêÜúÿÿÿÿ8€¬ÄÚÓ1
-L	java:S106A"+Replace this use of System.out by a logger.(©şêÜúÿÿÿÿ8€¬ÄÚÓ1
-G	java:S106F"+Replace this use of System.out by a logger.(‰‘®º8€¬ÄÚÓ1
-G	java:S106K"+Replace this use of System.out by a logger.(øı‰£8€¬ÄÚÓ1
-G	java:S106N"+Replace this use of System.out by a logger.(šÚÈ´8€¬ÄÚÓ1
-L	java:S106P"+Replace this use of System.out by a logger.(©şêÜúÿÿÿÿ8€¬ÄÚÓ1
-G	java:S106U"+Replace this use of System.out by a logger.(˜°äñ8€¬ÄÚÓ1
-G	java:S106X"+Replace this use of System.out by a logger.(šÚÈ´8€¬ÄÚÓ1
-L	java:S106Z"+Replace this use of System.out by a logger.(©şêÜúÿÿÿÿ8€¬ÄÚÓ1
-G	java:S106_"+Replace this use of System.out by a logger.(¶Ü¤Ï8€¬ÄÚÓ1
-G	java:S106b"+Replace this use of System.out by a logger.(šÚÈ´8€¬ÄÚÓ1
-L	java:S106d"+Replace this use of System.out by a logger.(©şêÜúÿÿÿÿ8€¬ÄÚÓ1
-L	java:S106i"+Replace this use of System.out by a logger.(õÂıüÿÿÿÿ8€¬ÄÚÓ1
-G	java:S106l"+Replace this use of System.out by a logger.(šÚÈ´8€¬ÄÚÓ1
-L	java:S106n"+Replace this use of System.out by a logger.(©şêÜúÿÿÿÿ8„¬ÄÚÓ1
-L	java:S106s"+Replace this use of System.out by a logger.(ï®Í‚úÿÿÿÿ8„¬ÄÚÓ1
-G	java:S106t"+Replace this use of System.out by a logger.(˜•ÎĞ8„¬ÄÚÓ1
-L	java:S106u"+Replace this use of System.out by a logger.(éšÔ¹ùÿÿÿÿ8„¬ÄÚÓ1
-L	java:S106y"+Replace this use of System.out by a logger.(óå¼çÿÿÿÿÿ8„¬ÄÚÓ1
-L	java:S106~"+Replace this use of System.out by a logger.(ï´×ªúÿÿÿÿ8„¬ÄÚÓ1
-M	java:S106ƒ"+Replace this use of System.out by a logger.(×æÉîşÿÿÿÿ8„¬ÄÚÓ1
-M	java:S106ˆ"+Replace this use of System.out by a logger.(š—°øÿÿÿÿ8½÷ÌÚÓ1
-Q
-java:S1144E"/Remove this unused private "addAllTest" method.(´¯®¬ùÿÿÿÿ8â„‘ÛÓ1
+java:S1220""Move this file to a named package.8ÕùäÛÓ1
+]	java:S125"<This block of commented-out lines of code should be removed.(¿ó¼–øÿÿÿÿ8ÜùäÛÓ1
+]	java:S125-"<This block of commented-out lines of code should be removed.(ÿ€­¯şÿÿÿÿ8ÜùäÛÓ1
+G	java:S1064"+Replace this use of System.out by a logger.(³ë…¨8ÜùäÛÓ1
+L	java:S1067"+Replace this use of System.out by a logger.(©şêÜúÿÿÿÿ8ÜùäÛÓ1
+L	java:S106>"+Replace this use of System.out by a logger.(¢ìÎçûÿÿÿÿ8ÜùäÛÓ1
+L	java:S106@"+Replace this use of System.out by a logger.(©şêÜúÿÿÿÿ8ÜùäÛÓ1
+G	java:S106E"+Replace this use of System.out by a logger.(‰‘®º8ÜùäÛÓ1
+G	java:S106J"+Replace this use of System.out by a logger.(øı‰£8ÜùäÛÓ1
+G	java:S106M"+Replace this use of System.out by a logger.(šÚÈ´8ÜùäÛÓ1
+L	java:S106O"+Replace this use of System.out by a logger.(©şêÜúÿÿÿÿ8åùäÛÓ1
+G	java:S106T"+Replace this use of System.out by a logger.(˜°äñ8åùäÛÓ1
+G	java:S106W"+Replace this use of System.out by a logger.(šÚÈ´8åùäÛÓ1
+L	java:S106Y"+Replace this use of System.out by a logger.(©şêÜúÿÿÿÿ8åùäÛÓ1
+G	java:S106^"+Replace this use of System.out by a logger.(¶Ü¤Ï8åùäÛÓ1
+G	java:S106a"+Replace this use of System.out by a logger.(šÚÈ´8åùäÛÓ1
+L	java:S106c"+Replace this use of System.out by a logger.(©şêÜúÿÿÿÿ8çùäÛÓ1
+L	java:S106h"+Replace this use of System.out by a logger.(õÂıüÿÿÿÿ8çùäÛÓ1
+G	java:S106k"+Replace this use of System.out by a logger.(šÚÈ´8çùäÛÓ1
+L	java:S106m"+Replace this use of System.out by a logger.(©şêÜúÿÿÿÿ8çùäÛÓ1
+L	java:S106r"+Replace this use of System.out by a logger.(ï®Í‚úÿÿÿÿ8çùäÛÓ1
+G	java:S106s"+Replace this use of System.out by a logger.(˜•ÎĞ8çùäÛÓ1
+L	java:S106t"+Replace this use of System.out by a logger.(éšÔ¹ùÿÿÿÿ8çùäÛÓ1
+L	java:S106x"+Replace this use of System.out by a logger.(óå¼çÿÿÿÿÿ8çùäÛÓ1
+L	java:S106}"+Replace this use of System.out by a logger.(ï´×ªúÿÿÿÿ8çùäÛÓ1
+M	java:S106‚"+Replace this use of System.out by a logger.(×æÉîşÿÿÿÿ8çùäÛÓ1
+M	java:S106‡"+Replace this use of System.out by a logger.(¬öÑ”üÿÿÿÿ8çùäÛÓ1
+M	java:S106‹"+Replace this use of System.out by a logger.(©şêÜúÿÿÿÿ8çùäÛÓ1
+H	java:S106"+Replace this use of System.out by a logger.(¥óæµ8çùäÛÓ1
+M	java:S106”"+Replace this use of System.out by a logger.(©şêÜúÿÿÿÿ8çùäÛÓ1
+M	java:S106™"+Replace this use of System.out by a logger.(š—°øÿÿÿÿ8çùäÛÓ1
+J
+java:S11441"-Remove this unused private "saveTest" method.(øò€Ş8çùäÛÓ1
+J
+java:S1144;"-Remove this unused private "loadBook" method.(Å–’Å8çùäÛÓ1

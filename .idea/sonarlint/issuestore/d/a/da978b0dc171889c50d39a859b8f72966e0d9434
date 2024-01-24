@@ -1,11 +1,11 @@
 
 7
-java:S1220""Move this file to a named package.8÷¤êÚÓ1
-l
-java:S2095¢"OUse try-with-resources or close this "ObjectInputStream" in a "finally" clause.(Ô¿­]8Š¥êÚÓ1
+java:S1220""Move this file to a named package.8’ÛÛÓ1
 n
-java:S2095›"PUse try-with-resources or close this "ObjectOutputStream" in a "finally" clause.(Ç™Ï¢8Š¥êÚÓ1
+java:S2095›"PUse try-with-resources or close this "ObjectOutputStream" in a "finally" clause.(Ç™Ï¢8 ÛÛÓ1
 l
-java:S6201F"JReplace this instanceof check and cast with 'instanceof Magazine magazine'(Ùêÿ­ûÿÿÿÿ8‘¥êÚÓ1
+java:S2095¢"OUse try-with-resources or close this "ObjectInputStream" in a "finally" clause.(Ô¿­]8 ÛÛÓ1
+l
+java:S6201F"JReplace this instanceof check and cast with 'instanceof Magazine magazine'(Ùêÿ­ûÿÿÿÿ8§ÛÛÓ1
 O
-java:S1128"-Remove this unused import 'java.util.Arrays'.(î–˜Éüÿÿÿÿ8³€ÛÓ1
+java:S1128"-Remove this unused import 'java.util.Arrays'.(î–˜Éüÿÿÿÿ8¯ÛÛÓ1
