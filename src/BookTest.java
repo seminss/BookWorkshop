@@ -12,14 +12,14 @@ public class BookTest {
 
         BookTest test = new BookTest();
 
-        test.addAllTest(List.of(new Book("21423", "Java Pro", "김하나", "jaen.kr",
-                15000, "Java 기본 문법 v0", 10), new Book("21424", "Java Pro", "김하나", "jaen.kr",
-                15000, "Java 기본 문법 v1", 10), new Book("21425", "Java Pro", "김하나", "jaen.kr",
-                15000, "Java 기본 문법 v2", 5), new Book("35355", "분석설계", "소나무", "jaen.kr",
-                30000, "SW 모델링", 30), new Magazine("45678", "월간 알고리즘", "홍길동", "jaen.kr",
-                10000, "1월 알고리즘", 40, 2021, 1)));
+//        test.addAllTest(List.of(new Book("21423", "Java Pro", "김하나", "jaen.kr",
+//                15000, "Java 기본 문법 v0", 10), new Book("21424", "Java Pro", "김하나", "jaen.kr",
+//                15000, "Java 기본 문법 v1", 10), new Book("21425", "Java Pro", "김하나", "jaen.kr",
+//                15000, "Java 기본 문법 v2", 5), new Book("35355", "분석설계", "소나무", "jaen.kr",
+//                30000, "SW 모델링", 30), new Magazine("45678", "월간 알고리즘", "홍길동", "jaen.kr",
+//                10000, "1월 알고리즘", 40, 2021, 1)));
 
-        //test.loadBook("books.txt");
+        test.loadBook("books.txt");
 
         test.getListTest();
         test.getBookTest();
@@ -38,7 +38,7 @@ public class BookTest {
         test.getListTest();
 
         test.removeByTitleTest("Java Pro");
-        test.searchByTitleTest("Java pro");
+        test.searchByTitleTest("Java Pro");
 
         test.getListTest();
 

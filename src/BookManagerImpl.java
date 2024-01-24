@@ -6,6 +6,7 @@ import java.io.ObjectOutputStream;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class BookManagerImpl implements IBookManager {
     private List<Book> books;
@@ -39,50 +40,29 @@ public class BookManagerImpl implements IBookManager {
     }
 
     @Override
-    public Book searchByIsbn(String isbn) throws ISBNNotFoundException { // isbn 으로 한 권 조회
-        for (Book book : books) {
-            if (book.getIsbn().equals(isbn)) {
-                return book;
-            }
-        }
-        throw new ISBNNotFoundException(isbn);
+    public Book searchByIsbn(String isbn) throws ISBNNotFoundException {
+        return books.stream()
+                .filter(b -> b.getIsbn().equals(isbn))
+                .findFirst().orElseThrow(() -> new ISBNNotFoundException(isbn));
     }
 
     @Override
-    public List<Book> searchByTitle(String title) throws TitleNotFoundException { // title 로 책 조회 (같은 제목이어도 버전이나 형태가 다르면
-        // Isbn이 다름)
-        List<Book> findBooks = new ArrayList<>();
-        for (Book book : books) {
-            if (book.getTitle().equals(title)) {
-                findBooks.add(book);
-            }
+    public List<Book> searchByTitle(String title) throws TitleNotFoundException {
+        List<Book> findBooks = books.stream().filter(b -> b.getTitle().equals(title)).toList();
+        if (findBooks.isEmpty()) {
+            throw new TitleNotFoundException(title);
         }
-        if (!findBooks.isEmpty()) {
-            return findBooks;
-        }
-        throw new TitleNotFoundException(title);
+        return findBooks;
     }
 
     @Override
-    public List<Magazine> getMagazines() { // 잡지 목록 조회, null 일수도 있음.
-        List<Magazine> magazines = new ArrayList<>();
-        for (Book book : books) {
-            if (book instanceof Magazine) {
-                magazines.add((Magazine) book);
-            }
-        }
-        return magazines;
+    public List<Magazine> getMagazines() {
+        return books.stream().filter(b -> b instanceof Magazine).map(b -> (Magazine) b).toList();
     }
 
     @Override
-    public List<Book> getBooks() { // 잡지를 제외한 책들 조회
-        List<Book> pureBooks = new ArrayList<>();
-        for (Book book : books) {
-            if (!(book instanceof Magazine)) {
-                pureBooks.add(book);
-            }
-        }
-        return pureBooks;
+    public List<Book> getBooks() {
+        return books.stream().filter(b -> !(b instanceof Magazine)).toList();
     }
 
     @Override
@@ -97,56 +77,43 @@ public class BookManagerImpl implements IBookManager {
 
     @Override
     public void sell(String isbn, int quantity) throws QuantityException, ISBNNotFoundException { // 책 판매(해당 수량만큼 -)
-        for (Book book : books) {
-            if (book.getIsbn().equals(isbn)) {
-                if (book.getQuantity() - quantity < 0) {
-                    throw new QuantityException();
-                }
-                book.setQuantity(book.getQuantity() - quantity);
-                return;
-            }
+        Book book = books.stream()
+                .filter(b -> b.getIsbn().equals(isbn))
+                .findFirst()
+                .orElseThrow(() -> new ISBNNotFoundException(isbn));
+
+        if (book.getQuantity() - quantity < 0) {
+            throw new QuantityException();
         }
-        throw new ISBNNotFoundException(isbn);
+        book.setQuantity(book.getQuantity() - quantity);
     }
 
     @Override
     public void buy(String isbn, int quantity) throws ISBNNotFoundException { // 책 구매 (해당 수량만큼 +)
-        for (Book book : books) {
-            if (book.getIsbn().equals(isbn)) {
-                book.setQuantity(book.getQuantity() + quantity);
-                return;
-            }
-        }
-        throw new ISBNNotFoundException(isbn);
+        Book book = books.stream().filter(b -> b.getIsbn().equals(isbn))
+                .findFirst()
+                .orElseThrow(() -> new ISBNNotFoundException(isbn));
+        book.setQuantity(book.getQuantity() + quantity);
     }
 
     @Override
     public void removeByIsbn(String isbn) throws ISBNNotFoundException { // isbn이 같은 책 삭제
-        for (int i = 0; i < books.size(); i++) {
-            if (books.get(i).getIsbn().equals(isbn)) {
-                books.remove(i);
-                return;
-            }
+        boolean removed = books.removeIf(b -> b.getIsbn().equals(isbn));
+        if (!removed) {
+            throw new ISBNNotFoundException(isbn);
         }
-        throw new ISBNNotFoundException(isbn);
     }
 
     @Override
-    public void removeByTitle(String title) throws TitleNotFoundException { // title이 같은 책 여러개 삭제, 인덱스 뒤에서 부터
-        int originSize = books.size();
-        for (int i = books.size() - 1; i >= 0; i--) {
-            if (books.get(i).getTitle().equals(title)) {
-                books.remove(i);
-            }
+    public void removeByTitle(String title) throws TitleNotFoundException { // title이 같은 책 전부 삭제, 인덱스 뒤에서 부터
+        boolean removed = books.removeIf(b -> b.getTitle().equals(title));
+        if (!removed) {
+            throw new TitleNotFoundException(title);
         }
-        if (originSize != books.size()) {
-            return;
-        }
-        throw new TitleNotFoundException(title);
     }
 
     @Override
-    public void removeAll() { // 전체 삭제
+    public void removeAll() {
         books.clear();
     }
 
@@ -158,11 +125,10 @@ public class BookManagerImpl implements IBookManager {
     }
 
     @SuppressWarnings("unchecked")
-    public List<Book> load(String filePath) throws IOException, ClassNotFoundException {
+    public void load(String filePath) throws IOException, ClassNotFoundException {
         ObjectInputStream ois = new ObjectInputStream(new FileInputStream(filePath));
         List<Book> loadBooks = (ArrayList<Book>) ois.readObject();
         ois.close();
         books = loadBooks;
-        return books;
     }
 }

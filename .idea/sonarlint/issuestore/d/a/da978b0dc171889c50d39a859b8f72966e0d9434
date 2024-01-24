@@ -1,11 +1,13 @@
 
 7
-java:S1220""Move this file to a named package.8’ÛÛÓ1
-n
-java:S2095›"PUse try-with-resources or close this "ObjectOutputStream" in a "finally" clause.(Ç™Ï¢8 ÛÛÓ1
+java:S1220""Move this file to a named package.8ÔŞéİÓ1
 l
-java:S2095¢"OUse try-with-resources or close this "ObjectInputStream" in a "finally" clause.(Ô¿­]8 ÛÛÓ1
-l
-java:S6201F"JReplace this instanceof check and cast with 'instanceof Magazine magazine'(Ùêÿ­ûÿÿÿÿ8§ÛÛÓ1
+java:S2095"OUse try-with-resources or close this "ObjectInputStream" in a "finally" clause.(Ô¿­]8äŞéİÓ1
+m
+java:S2095z"PUse try-with-resources or close this "ObjectOutputStream" in a "finally" clause.(Ç™Ï¢8äŞéİÓ1
+d
+java:S1612<"GReplace this lambda with method reference 'Magazine.class::isInstance'.(†Ğ±´8èŞéİÓ1
 O
-java:S1128"-Remove this unused import 'java.util.Arrays'.(î–˜Éüÿÿÿÿ8¯ÛÛÓ1
+java:S1128"-Remove this unused import 'java.util.Arrays'.(î–˜Éüÿÿÿÿ8Íğ‚ŞÓ1
+Z
+java:S1128	"8Remove this unused import 'java.util.stream.Collectors'.(Óóº´úÿÿÿÿ8Íğ‚ŞÓ1

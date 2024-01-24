@@ -30,7 +30,7 @@ public interface IBookManager {
 
 	void buy(String isbn, int quantity) throws ISBNNotFoundException;
 
-	List<Book> load(String filePath) throws IOException, ClassNotFoundException;
+	void load(String filePath) throws IOException, ClassNotFoundException;
 
 	void save(String filePath) throws IOException;
 }

@@ -1,15 +1,11 @@
 
 h
-java:S1192"FDefine a constant instead of duplicating this literal "21424" 6 times.(ˆ°Èüÿÿÿÿ8ÓùäÛÓ1
-e
-java:S1192"HDefine a constant instead of duplicating this literal "jaen.kr" 5 times.(ƒ“¹«8ÓùäÛÓ1
-f
-java:S1192"IDefine a constant instead of duplicating this literal "Java Pro" 4 times.(ƒ“¹«8ÓùäÛÓ1
+java:S1192"FDefine a constant instead of duplicating this literal "21424" 5 times.(®½ÕÇûÿÿÿÿ8ÓùäÛÓ1
 t
 java:S1192J"WDefine a constant instead of duplicating this literal "] --------------------" 5 times.(øı‰£8ÓùäÛÓ1
 7
 java:S1220""Move this file to a named package.8ÕùäÛÓ1
-]	java:S125"<This block of commented-out lines of code should be removed.(¿ó¼–øÿÿÿÿ8ÜùäÛÓ1
+X	java:S125"<This block of commented-out lines of code should be removed.(’ü¸¾8íÈûİÓ1
 ]	java:S125-"<This block of commented-out lines of code should be removed.(ÿ€­¯şÿÿÿÿ8ÜùäÛÓ1
 G	java:S1064"+Replace this use of System.out by a logger.(³ë…¨8ÜùäÛÓ1
 L	java:S1067"+Replace this use of System.out by a logger.(©şêÜúÿÿÿÿ8ÜùäÛÓ1
@@ -41,5 +37,5 @@ M	java:S106”"+Replace this use of System.out by a logger.(©şêÜúÿÿÿÿ8çùäÛÓ1
 M	java:S106™"+Replace this use of System.out by a logger.(š—°øÿÿÿÿ8çùäÛÓ1
 J
 java:S11441"-Remove this unused private "saveTest" method.(øò€Ş8çùäÛÓ1
-J
-java:S1144;"-Remove this unused private "loadBook" method.(Å–’Å8çùäÛÓ1
+Q
+java:S1144D"/Remove this unused private "addAllTest" method.(´¯®¬ùÿÿÿÿ8ÃŠ€ŞÓ1
