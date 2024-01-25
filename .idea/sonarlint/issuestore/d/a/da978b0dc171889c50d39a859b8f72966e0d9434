@@ -1,0 +1,13 @@
+
+7
+java:S1220""Move this file to a named package.8‘ﬁÈ›”1
+l
+java:S2095Å"OUse try-with-resources or close this "ObjectInputStream" in a "finally" clause.(‘ø≠]8‰ﬁÈ›”1
+m
+java:S2095z"PUse try-with-resources or close this "ObjectOutputStream" in a "finally" clause.(«ôœ¢8‰ﬁÈ›”1
+d
+java:S1612<"GReplace this lambda with method reference 'Magazine.class::isInstance'.(Ü–±¥8ËﬁÈ›”1
+O
+java:S1128"-Remove this unused import 'java.util.Arrays'.(Óñò…¸ˇˇˇˇ8ÕÇﬁ”1
+Z
+java:S1128	"8Remove this unused import 'java.util.stream.Collectors'.(”Û∫¥˙ˇˇˇˇ8ÕÇﬁ”1
